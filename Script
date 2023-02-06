@@ -1,0 +1,19 @@
+-- [ @VYT ]
+-- [ bit.ly/3Yty89k ]
+
+while true do
+wait(1)
+for i,v in pairs(game.Workspace["Glass Bridge"].GlassPane:GetDescendants()) do
+if v.ClassName == "Part" then
+if v.CanCollide == false then
+v.Transparency = 1
+v.BrickColor = BrickColor.new("Lime White")
+else
+v.BrickColor = BrickColor.new("Really Black")
+v.Transparency = 0
+end
+end
+end
+end
+
+-- [ End ]
